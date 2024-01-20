@@ -24,17 +24,18 @@
 
 .vxod {
     text-align: right;
+    float: right;
 }
 
 .knopka {
     position: absolute;
-    top: 200px;
+    top: 265px;
     left: 170px;
 }
 
 .registr {
     position: absolute;
-    top: 200px;
+    top: 265px;
     left: 65px;
 }
 
@@ -54,6 +55,29 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.Home{
+.Home {
     text-align: center;
+}
+
+.horizont {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+}
+.horizont li{
+    margin-right: 10px;
+    text-align: center;
+}
+.photo{
+    margin-top: 0px;
+    margin-left: 800px;
+}
+.text{
+    margin-top: -350px;
+}
+body{
+    background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705622400&semt=sph);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
