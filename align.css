@@ -1,18 +1,59 @@
-.center{
+.center {
     text-align: center;
 }
-.right{
+
+.right {
     text-align: center;
 }
-.poisk{
-    text-align: center; 
+
+.poisk {
+    text-align: center;
 }
-.cvet{
+
+.cvet {
     color: blue;
 }
-.gallery{
+
+.gallery {
     text-align: center;
 }
-.gallery1{
+
+.gallery1 {
     color: purple;
+}
+
+.vxod {
+    text-align: right;
+}
+
+.knopka {
+    position: absolute;
+    top: 200px;
+    left: 170px;
+}
+
+.registr {
+    position: absolute;
+    top: 200px;
+    left: 65px;
+}
+
+
+.ramka {
+    border: none;
+}
+
+.ramka input {
+    width: 30%;
+    padding: 5px;
+    width: auto;
+    margin: auto;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.Home{
+    text-align: center;
 }

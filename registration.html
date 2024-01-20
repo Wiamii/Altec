@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="align.css">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <div class="Home">
+        <a href="./index.html">На главную</a>
+    </div>
+
+    <div class="container">
+        <h2>Регистрация</h2>
+
+        <form action="#" method="post" class="registration-form">
+            <fieldset class="ramka">
+                <!-- Имя -->
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Иван" required>
+                <br>
+                <br>
+
+                <!-- Фамилия -->
+                <label for="surname">Фамилия</label>
+                <input type="surname" id="surname" name="surname" placeholder="Иванов" required>
+                <br>
+                <br>
+
+
+                <!-- Логин -->
+                <label for="username">Логин:</label>
+                <input type="text" id="username" name="username" required placeholder="unknow">
+                <br>
+                <br>
+
+                <!-- Пароль -->
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required placeholder="Qwerty12345@" pattern="([A-z])+([0-9])+([\!,\_\@])">
+                <br>
+                <br>
+
+                <!-- Повторение пароля -->
+                <label for="password-repeat">Повторите пароль:</label>
+                <input type="password-repeat" id="password-repeat" name="password-repeat" required placeholder="Qwerty12345@" pattern="([A-z])+([0-9])+([\!,\_\@])">
+                <br>
+                <br>
+
+
+                <!-- Почта -->
+                <label for="email">Почта:</label>
+                <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                <br>
+                <br>
+
+                <!-- Год рождения -->
+                <label for="birth-year">Год рождения:</label>
+                <input type="date" id="birth-year" name="birth-year" min="1900" max="2024" required>
+                <br>
+                <br>
+
+                <!-- Место проживания -->
+                <label for="location">Место проживания:</label>
+                <select name="location" id="location">
+                    <option value="Эстония">Эстония</option>
+                    <option value="Латвия" selected>Латвия</option>
+                    <option value="Литва">Литва</option>
+                    <option value="Польша">Польша</option>
+                    <option value="Германия">Германия</option>
+                </select>
+                <br>
+                <br>
+
+                <!-- Кнопка Зарегистрироваться -->
+                <button type="submit">Зарегистрироваться</button>
+                <button class="back-button" onclick="history.back()">назад</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
