@@ -30,13 +30,13 @@
 .knopka {
     position: absolute;
     top: 265px;
-    left: 170px;
+    left: 988px;
 }
 
 .registr {
     position: absolute;
     top: 265px;
-    left: 65px;
+    left: 890px;
 }
 
 
@@ -80,4 +80,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.border{
+    border: none;
 }
