@@ -103,7 +103,15 @@ background-color: cadetblue;
         h1::after,h1::before{
             content: "***";
         }
+
+        p + img{
+            width: 300px;
+        }
         
+
+        input:not([type="passowrd"]){
+            background-color: chocolate;
+        }
 
 
     </style>
@@ -202,6 +210,10 @@ background-color: cadetblue;
     <footer>
         <address>
             <form action=""></form>
+            <input type="text">
+            <input type="password">
+            <input type="text">
+            <input type="password">
             <input type="text">
             <input type="password">
         </address>
