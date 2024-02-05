@@ -5,34 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
-            outline: 5px solid green;
-            height: 1000px;
-            display: grid;
-            grid-template-columns:auto auto auto auto;
-            grid-template-columns: auto auto auto auto;
-           
+        body{
+            margin: 0px;
+            background-image: linear-gradient(30deg,#ff6e02, #ffff00,#ff6e02);
+            background-image: radial-gradient(#ff6e02, #ffff00 30%,#ff6e02);
+            
+
+
         }
-        .box{
-            gap: 10px;
-            background-color: aquamarine;
-            border: 2px solid red;
+        .container{
+            /* outline:5px solid green;   */
+            height: 200vh;
+            display: grid;
+            gap:10px;
+            grid-template-columns: 2fr 2fr 4fr 4fr 4fr 4fr 2fr 2fr;
+            grid-template-rows: 3fr 6fr 2fr;
+
+
+            grid-template-areas:
+            "header header header header header header header header"
+            "left left centerPanel centerPanel centerPanel centerPanel right right"
+            "footer footer footer footer footer footer footer footer"
+            
+        }
+
+        
+
+
+        .header{
+            grid-area: header;
+            /* background-color: black; */
+            background-image: url("./images/381243947_1266727844037385_594893283240937570_n.jpg");
+            /* background-repeat: no-repeat; */
+            background-size: 300px 100px;
+            background-size: cover;
+            background-attachment: fixed;
+            background-clip: text;
+            font-size: 100pt;
+            color: transparent;
+            
+        }
+        img{
+            min-width: 200px;
+            max-height: 800px;
+        }
+        .left{
+            grid-area: left;
+        }
+        .centerPanel{
+            grid-area: centerPanel;
+            background-image: url("https://static-cse.canva.com/blob/846900/photo1502082553048f009c37129b9e1583341920812.jpeg");
+            background-size: 300px 100px;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+        .rightPanel{
+            grid-area: right;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+        .container div{
+            background-color:#dada163a);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>    
+
+
+      <div class="container">
+            <div class="header">Header</div>
+            <div class="left">Left Panel</div>
+            <div class="centerPanel">Center Panel</div>
+            <div class="rightPanel">Right Panel</div>
+            <div class="footer">Footer</div>
+      </div>  
 </body>
 </html>
